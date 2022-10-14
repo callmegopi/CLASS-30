@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addUserDetailes()">update User detailes</button>
+    <div id="myDiv"></div>
+    <script>
+        var person = {
+            fname: "gopi",
+            lname: "chandu",
+            number: 8888,
+            job: "no",
+            state: "telanagana",
+            District: "mahabubnagar",
+            zip: 509001
+        }
+
+        function addUserDetailes() {
+            Person = {
+                fname: "gopi",
+                lname: "chandu",
+                number: 8888,
+                job: "no",
+                state: "telanagana",
+                District: "mahabubnagar",
+                zip: 509001,
+            }
+            var allinfo = ""
+
+            for (gopi in Person) {
+                console.log(gopi)
+                allinfo = allinfo + Person[gopi] + "<br>"
+
+            }
+            document.getElementById("myDiv").innerHTML = allinfo
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addUserDetailes()">user detailes</button>
+    <div id="myDiv"></div>
+    <script>
+        function addUserDetailes() {
+            var nani = {
+                fname: "nani",
+                lname: "chintu",
+                nickname: "chiotu",
+                number: {
+                    mobile: 99999,
+                    landline: 987798,
+                    office: 08542
+                },
+                city: {
+                    born: "hyd",
+                    studeies: "mbnr",
+                    mothertown: "kairathabad",
+                },
+                zip: 509001
+            }
+            var allinfo = ""
+
+            for(me in nani) {
+                console.log(me)
+                allinfo = allinfo + nani[me]+"<br>"
+            }
+            document.getElementById("myDiv").innerHTML = allinfo
+        }
+    </script>
+</body>
+
+</html>

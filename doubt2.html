@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Main {
+            display: block;
+            width: 800px;
+            height: 200px;
+            padding: 0;
+            background-color: red;
+            color: rgb(0, 255, 60);
+        }
+
+        #Main>div {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Main">
+        <button onclick="addUser1()">user-1</button>
+        <div id="User1"></div>
+
+        <button onclick="addUser2()">user-2</button>
+        <div id="User2"></div>
+
+        <button onclick="addUser3()">user-3</button>
+        <div id="User3"></div>
+
+        <button onclick="addUser4()">user-4</button>
+        <div id="User4"></div>
+
+        <button onclick="addUser5()">user-5</button>
+        <div id="User5"></div>
+
+        <button onclick="addUser6()">user-6</button>
+        <div id="User6"></div>
+
+        <button onclick="addUser7()">user-7</button>
+        <div id="User7"></div>
+
+        <button onclick="addUser8()">user-8</button>
+        <div id="User8"></div>
+
+        <button onclick="addUser9()">user-9</button>
+        <div id="User9"></div>
+
+        <button onclick="addUser10()">user-10</button>
+        <div id="User10"></div>
+    </div>
+
+    <script>
+        function addUser1() {
+            var user1 = {
+                fname: "nani",
+                lname: "nanu",
+                mobile: 99999,
+                city: "mbnr",
+                zip: 090900,
+                country: "india",
+                role: "software",
+            }
+            var allinfo =""
+            for(a in user1) {
+                console.log(a)
+                allinfo = allinfo + user1+"<br>"
+            }
+            document.getElementById("User1").innerHTML = allinfo
+        }
+
+        function addUser2() {
+            var user2 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser3() {
+            var user3 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser4() {
+            var user4 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser5() {
+            var user5 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser6() {
+            var user1 = {
+                fname: "nani",
+                lname: "nanu",
+                mobile: 99999,
+                city: "mbnr",
+                zip: 090900,
+                country: "india",
+                role: "software",
+            }
+        }
+
+        function addUser7() {
+            var user2 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser8() {
+            var user3 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser9() {
+            var user4 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+
+        function addUser10() {
+            var user5 = {
+                fname: "chandu",
+                lname: "shekar",
+                mobile: 88888,
+                city: "hyd",
+                zip: 090900,
+                country: "india",
+                role: "groups",
+            }
+        }
+    </script>
+</body>
+
+</html>
